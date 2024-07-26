@@ -4,30 +4,60 @@
     font-family: 'Rajdhani';
     src: url(../polices/Rajdhani-Medium.ttf);
 }
-
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+:root {
+    --yellow-color: #FFFF00;
+    --white-color: #ffffff;
 }
 
-h1 {
+
+/*Design de la navigation*/
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 0;
+    
+}
+
+ul {
+    list-style: none;
+    display: flex; /* Assure que les éléments de la liste sont en ligne */
+    gap: 20px; /* Ajoute de l'espace entre les éléments de la liste */
+}
+
+nav ul a {
+    color: var(--white-color);
+    font-size: 25px;
+    font-weight: 600;
     font-family: 'rajdhani';
-    font-size: 36px;
-    font-weight: 400;
+    /*text-decoration: none; */
+   
 }
 
-button {
-    font-family: 'rajdhani';
-    font-size: 20px;
-    font-weight: 400;
+.logo:hover {
+    -webkit-filter: invert(4%) sepia(100%) saturate(1498%) hue-rotate(355deg) brightness(109%) contrast(103%);
+    filter: invert(4%) sepia(100%) saturate(1498%) hue-rotate(355deg) brightness(109%) contrast(103%);
 }
 
-.container {
-    width: 80%;
-    margin: 0 auto;
+.logo-f:hover {
+    -webkit-filter: invert(4%) sepia(100%) saturate(1498%) hue-rotate(355deg) brightness(109%) contrast(103%);
+    filter: invert(4%) sepia(100%) saturate(1498%) hue-rotate(355deg) brightness(109%) contrast(103%);
 }
+
+.social:hover {
+    -webkit-filter: invert(4%) sepia(100%) saturate(1498%) hue-rotate(355deg) brightness(109%) contrast(103%);
+    filter: invert(4%) sepia(100%) saturate(1498%) hue-rotate(355deg) brightness(109%) contrast(103%);
+}
+
+.image-container:hover {
+    transform: scale(1.1);
+}
+
+nav ul a:hover {
+    color: var(--yellow-color);
+}
+
 
 /* les barres */
 .up-bar {
@@ -40,7 +70,7 @@ button {
 
 .left-bar {
     background-color: #BCBBBD;
-    height: 2500px;
+    height: 2600px;
     left: 87%;
     top: 0px;
     border-left: 1px solid #BCBBBD;
@@ -50,7 +80,7 @@ button {
 
 .right-bar {
     background-color: #BCBBBD;
-    height: 2500px;
+    height: 2600px;
     right: 85%;
     top: 0px;
     border-left: 1px solid #BCBBBD;

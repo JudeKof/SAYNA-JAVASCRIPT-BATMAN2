@@ -93,10 +93,13 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: 60px 0;
+    
 }
 
 ul {
     list-style: none;
+    display: flex; /* Assure que les éléments de la liste sont en ligne */
+    gap: 20px; /* Ajoute de l'espace entre les éléments de la liste */
 }
 
 nav ul a {
@@ -105,6 +108,7 @@ nav ul a {
     font-weight: 600;
     font-family: 'rajdhani';
     /*text-decoration: none; */
+   
 }
 
 .logo:hover {
